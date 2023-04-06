@@ -23,23 +23,14 @@ section {
 }
 
 .descricao {
-    display: grid;
-    grid-auto-flow: row;
     background-color: #514988;
     width: 50%;
     height: auto;
-}
-
-#iddesc {
-    height: auto;
-}
-
-.descricao div {
-    margin: 2rem;
+    padding: 30px 60px;
 }
 
 .descricao h1 {
-    font-size: 50px;
+    font-size: 70px;
     color: #F3C61F;
     text-align: center;
     margin-bottom: 15px;
@@ -47,7 +38,7 @@ section {
 }
 
 .descricao h4 {
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     text-align: center;
 }
@@ -56,7 +47,8 @@ section {
     color: white;
     text-align: center;
     padding: 10px;
-    font-size: 30px;
+    font-size: 29px;
+    line-height: 40px;
 }
 
 /* parte da countdown do evento / video */
@@ -66,12 +58,10 @@ section {
     grid-auto-flow: column;
     margin-top: 30px;
     text-align: center;
-}
-
-#timer {
     color: #514988;
     font-weight: bold;
     text-align: center;
+    gap: 15px;
 }
 
 .secaotimer {
@@ -83,15 +73,15 @@ section {
     display: flex;
     text-align: center;
     font-size: 60px;
-    margin-left: 0;
+    margin: 0;
 }
 
 .secaotimer h1 {
     display: flex;
     justify-content: end;
-    margin-right: 0px;
     font-size: 60px;
     align-items: center;
+    margin: 0;
 }
 
 .countdown {
@@ -104,12 +94,19 @@ section {
     color: #E33881;
     text-align: center;
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 video {
-    width: 1000px;
-    margin: 10px 30px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#video {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Parte rodapé site */
@@ -147,6 +144,11 @@ button {
     border-radius: 15px;
     height: 100px;
     color: white;
-    font-size: 40px;
+    font-size: 42px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F3C61F;
 }
