@@ -52,24 +52,57 @@
         </div>
 
     </section>
-        
-
-    <footer>
+    
+    <article>
         <div id="ingressos">
             <p>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
             <div>
-                <img src="assets/images/image1.png" alt="ingresso1">
-                <img src="assets/images/image2.png" alt="ingresso1">
-                <img src="assets/images/image3.png" alt="ingresso1">
-                <img src="assets/images/image4.png" alt="ingresso1">
+                <img 
+                src="assets/images/image1.png" 
+                onclick="selectCard('#quinta')"
+                alt="ingresso1" 
+                onmouseover="highlightCard('#quinta')" 
+                onmouseout="highlightCard('#quinta')" 
+                id="quinta">
+
+                <img 
+                src="assets/images/image2.png" 
+                onclick="selectCard('#sexta')"
+                alt="ingresso2" 
+                onmouseover="highlightCard('#sexta')" 
+                onmouseout="highlightCard('#sexta')" 
+                id="sexta">
+
+                <img 
+                src="assets/images/image3.png" 
+                onclick="selectCard('#sabado')"
+                alt="ingresso3" 
+                onmouseover="highlightCard('#sabado')" 
+                onmouseout="highlightCard('#sabado')" 
+                id="sabado">
+
+                <img 
+                src="assets/images/image4.png" 
+                onclick="selectCard('#domingo')"
+                alt="ingresso4" 
+                onmouseover="highlightCard('#domingo')" 
+                onmouseout="highlightCard('#domingo')" 
+                id="domingo">
             </div>
         </div>
         <div id="botao">
-            <button>GARANTA O SEU!</button>
+            <button onclick="showSelectedCards()">GARANTA O SEU!</button>
         </div>
+    </article>
+    <footer id="emailCadastro">
+        <h4>RECEBA AS NOTICIAS EM PRIMEIRA MÃO</h4>
+        <form action="https://www.google.com.br">
+            <input type="email" placeholder="Seu email" required />
+            <input type="Submit" />
+        </form>
     </footer>
 
-
     <script src="main.js"></script>
+    <script src="main2.js"></script>
 </body>
 </html>
